@@ -2,7 +2,7 @@ import json
 import ollama
 
 from helpers.nano_to_seconds import nano_to_seconds
-from config.ollama import MODEL, SYSTEM_PROMPT
+from config.ollama import MODEL, SYSTEM_PROMPT, THREADS
 
 
 def summarize(messages):
