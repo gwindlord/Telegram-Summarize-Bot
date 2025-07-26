@@ -60,10 +60,8 @@ async def summarize_handler(update: Update, context: CallbackContext) -> None:
     summary_generator = summarize(messages)
 
     for partial_response in summary_generator:
-        try:
-            await response_message.edit_text(partial_response)
-        except Exception:
-            pass
+        pass
+    await response_message.edit_text(partial_response)
 
 
 def error_handler(update: Update, context: CallbackContext):
