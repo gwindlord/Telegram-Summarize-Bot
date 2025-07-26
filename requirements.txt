@@ -5,3 +5,4 @@ huggingface_hub[hf_xet]
 huggingface_hub[cli]
 ctranslate2
 transformers[torch]
+sentencepiece
