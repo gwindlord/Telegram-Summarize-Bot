@@ -12,7 +12,8 @@ def summarize(messages):
         model=MODEL,
         prompt=messages_json,
         system=SYSTEM_PROMPT,
-        stream=True
+        stream=True,
+        options={'num_thread': THREADS}
     )
 
     try:
