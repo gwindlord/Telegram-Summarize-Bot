@@ -61,7 +61,7 @@ async def summarize_handler(update: Update, context: CallbackContext) -> None:
 
     for partial_response in summary_generator:
         pass
-    await response_message.edit_text(partial_response)
+    await response_message.reply_text(partial_response)
 
 
 def error_handler(update: Update, context: CallbackContext):
